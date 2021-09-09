@@ -1,1 +1,57 @@
-# House_Price_prediction
+# Indian House Price Prediction
+A regression based project for predicting house 🏠 price💲.
+
+## Project objective
+The purpose of this project is to study the relationship between different factors(dependent variables) that influence the price(target variable) of houses in India and predict house price using different Machine Learning algorithms.
+
+### Methods used
+- Statistics
+- Machine Learning
+- Data visualization
+- Predictive modeling
+- etc.
+
+### Technology and libraries used
+- Python
+- matplotlib
+- seaborn
+- numpy
+- pandas
+- scikit-learn
+- scipy
+- etc.
+
+## Overview
+This is an Indian house price predicting regression based project. 
+### Data source
+[@kaggle](https://www.kaggle.com/anmolkumar/house-price-prediction-challenge/tasks?taskId=2304)
+
+### Exploratory data analysis
+- First the data set is checked for any missing or null values. If there's any any, then they are either dropped or replaced with mean or median as per analysis.
+- Then the correlation of the features are observed using corr() and heatmap.
+![correlation](https://github.com/Dipankar-Medhi/House_Price_prediction/blob/main/heatmap.jpg)
+- We can see that of all the features, **Area** has maximum influence on the target variable i.e **price**.
+- Then we analyse the categorical variables.
+
+<img width = "400" src = "https://github.com/Dipankar-Medhi/House_Price_prediction/blob/main/property.jpg" > <img width = "450" src = "https://github.com/Dipankar-Medhi/House_Price_prediction/blob/main/categorical_features.jpg" >
+
+- Then we remove the outliers.
+- Visualizing the area feature using boxplot.
+
+<img width="500" src = "https://github.com/Dipankar-Medhi/House_Price_prediction/blob/main/area.jpg" >
+
+### Data preprocessing
+- The features that has the maximum influence on the target variable (price) are considered and rest all are dropped.
+- Then the outliers are removed using IQR(Interquantile Range) method. 
+- The dataset is then scaled using StandardScaler.
+- And dataset is split into train and test sets using train_test_split method.
+
+### Model training and evaluation
+- Using sklearn to train the model on the training data set and testing on the test data set.
+- Metrics used: RMSE for evaluation of the model.
+
+
+
+
+
+
