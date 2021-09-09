@@ -28,8 +28,7 @@ This is an Indian house price predicting regression based project.
 
 ### Exploratory data analysis
 - First the data set is checked for any missing or null values. If there's any any, then they are either dropped or replaced with mean or median as per analysis.
-- Then the correlation of the features are observed using corr() and heatmap.
-![correlation](https://github.com/Dipankar-Medhi/House_Price_prediction/blob/main/heatmap.jpg)
+
 - We can see that of all the features, **Area** has maximum influence on the target variable i.e **price**.
 - Then we analyse the categorical variables.
 
@@ -39,6 +38,11 @@ This is an Indian house price predicting regression based project.
 - Visualizing the area feature using boxplot.
 
 <img width="500" src = "https://github.com/Dipankar-Medhi/House_Price_prediction/blob/main/area.jpg" >
+
+### Feature engineering
+- To select the fetures that influence the target variable,  corr() command is used to look into the relationship of the dependent variables with the target variable.
+- And heatmap is used for proper visual representation.¶
+![correlation](https://github.com/Dipankar-Medhi/House_Price_prediction/blob/main/heatmap.jpg)
 
 ### Data preprocessing
 - The features that has the maximum influence on the target variable (price) are considered and rest all are dropped.
